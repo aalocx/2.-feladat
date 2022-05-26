@@ -1,6 +1,12 @@
 let osc, envelope;
-function mousePressed() { getAudioContext().resume() }
+
+function mousePressed() {
+  userStartAudio();
+}
+
 function setup() {
+  getAudioContext().suspend();
+  
   createCanvas(640, 480);
   
   osc = new p5.SinOsc();
