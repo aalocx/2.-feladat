@@ -1,5 +1,5 @@
 let osc, envelope;
-
+function mousePressed() { getAudioContext().resume() }
 function setup() {
   createCanvas(640, 480);
   
